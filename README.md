@@ -12,6 +12,18 @@
 **1. Get the codes/scripts from this repo.**
 * git clone https://github.com/Here2ServeU/docker-webform
 
+**2. Create an S3 Bucket**
+* Go to the S3 console in AWS.
+* Create a new bucket and name it ***t2s-form-submissions***. 
+
+**3. Create a DynamoDB Table**
+* Go to the DynamoDB console in AWS.
+* Create a new table and name it ***T2SFormSubmissions***.
+* Primary Key should be ***submission_id** (String).
+
+**4. Create a Lambda Function**
+* Create a Lambda function that will handle the submissions for the form and name it, ***lambda-function.py***. 
+
 **2. Move into the working directory:**
 * cd docker-webform  
 
