@@ -20,7 +20,7 @@
 * docker-compose up
 
 **4. Validate:**
-* Open your browser and go to http://localhost:5000 🌐.
+* Open your browser and go to http://localhost:8080 🌐.
 * If you did not change the code, you should see your website live with this message: "Hello, World, from Dr. Emmanuel here at T2S!"
 
 **5. Clean Up:**
