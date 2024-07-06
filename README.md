@@ -2,7 +2,7 @@
 
 * 👋 Hey everyone! Welcome back to my GitHub.
 * 🎥 This repo shows you how to deploy a website using Docker Compose and a Node.js script for the deployment.
-* 📊 HTML .....
+* 📊 HTML (HyperText Markup Language) is the standard markup language used to create and design web pages by defining their structure and content through various tags and elements.
 
 ## Prerequisites:
 * 💻 A computer with Docker and Docker Compose installed.
