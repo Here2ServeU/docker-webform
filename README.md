@@ -32,22 +32,21 @@
 * Integrate the POST method with the Lambda function created earlier.
 * Deploy the API to a new stage (e.g., prod).
 
-**6. Modify the HTML Form to Submit to the API**
-* Update the form action URL in the HTML to point to the API Gateway endpoint.
-* Replace <api-id> with your actual API Gateway ID.
+**6. Move into the working directory:**
+* cd docker-webform
 
-**2. Move into the working directory:**
-* cd docker-webform  
+**7. Modify the HTML Form to Submit to the API**
+* Update the form action URL in the HTML to point to the API Gateway endpoint by replacing the ***<api-id>*** with your ***API Gateway ID***. 
 
-**3. Build and Run Docker Compose:**
+**8. Build and Run Docker Compose:**
 * docker-compose build
 * docker-compose up
 
-**4. Validate:**
-* Open your browser and go to http://localhost:8080 🌐.
+**9. Validate:**
+* Open your browser and go to http://localhost:8080🌐.
 * If you did not change the code, you should see your website live with this message: "Hello, World, from Dr. Emmanuel here at T2S!"
 
-**5. Clean Up:**
+**10. Clean Up:**
 * docker-compose down
 
 ## Troubleshooting:
@@ -57,4 +56,4 @@
 
 ## Outro:
 * 🎉 Congrats! You have successfully deployed a website built on a node.js script and using Docker Compose.
-* 💬 Leave any questions or comments below; I'll be happy to help!
+* 💬 Leave any questions or comments below; I'll gladly help!
