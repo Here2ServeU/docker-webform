@@ -22,7 +22,19 @@
 * Primary Key should be ***submission_id** (String).
 
 **4. Create a Lambda Function**
-* Create a Lambda function that will handle the submissions for the form and name it, ***lambda-function.py***. 
+* Create a Lambda function that will handle the submissions for the form and name it ***lambda-function.py***.
+
+**5. Set Up API Gateway**
+* Go to the API Gateway console in AWS.
+* Create a new REST API.
+* Create a new resource (e.g., /submit_form).
+* Create a new POST method for the resource.
+* Integrate the POST method with the Lambda function created earlier.
+* Deploy the API to a new stage (e.g., prod).
+
+**6. Modify the HTML Form to Submit to the API**
+* Update the form action URL in the HTML to point to the API Gateway endpoint.
+* Replace <api-id> with your actual API Gateway ID.
 
 **2. Move into the working directory:**
 * cd docker-webform  
