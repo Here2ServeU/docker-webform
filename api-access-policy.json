@@ -3,8 +3,9 @@
   "Statement": [
     {
       "Effect": "Allow",
+      "Principal": "*",
       "Action": "execute-api:Invoke",
-      "Resource": "arn:aws:execute-api:us-east-1::av3w95rcvj/*"
+      "Resource": "arn:aws:execute-api:us-east-1:730335276920:av3w95rcvj/prod/POST/submit_form"
     }
   ]
 }
