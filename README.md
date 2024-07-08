@@ -32,6 +32,10 @@
 * Integrate the POST method with the Lambda function created earlier.
 * Deploy the API to a new stage (e.g., prod).
 
+**6. Create S3 Bucket, DynamoDB, CloudWatch Logs, and Trust Policies**
+* Create policies.
+* Create an IAM Role for Lambda service. 
+
 **6. Move into the working directory:**
 * cd docker-webform
 
