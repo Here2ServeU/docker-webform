@@ -3,7 +3,6 @@
   "Statement": [
     {
       "Effect": "Allow",
-      "Principal": "*",
       "Action": "execute-api:Invoke",
       "Resource": "arn:aws:execute-api:us-east-1::av3w95rcvj/*"
     }
