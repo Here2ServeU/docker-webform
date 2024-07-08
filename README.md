@@ -34,23 +34,23 @@
 
 **6. Create S3 Bucket, DynamoDB, CloudWatch Logs, and Trust Policies**
 * Create policies.
-* Create an IAM Role for Lambda service. 
+* Create an IAM Role for Lambda service and attach the above policies. 
 
-**6. Move into the working directory:**
+**7. Move into the working directory:**
 * cd docker-webform
 
-**7. Modify the HTML Form to Submit to the API**
+**8. Modify the HTML Form to Submit to the API**
 * Update the form action URL in the HTML to point to the API Gateway endpoint by replacing the ***<api-id>*** with your ***API Gateway ID***. 
 
-**8. Build and Run Docker Compose:**
+**9. Build and Run Docker Compose:**
 * docker-compose build
 * docker-compose up
 
-**9. Validate:**
+**10. Validate:**
 * Open your browser and go to http://localhost:8080🌐.
 * If you did not change the code, you should see your website live with this message: "Hello, World, from Dr. Emmanuel here at T2S!"
 
-**10. Clean Up:**
+**11. Clean Up:**
 * docker-compose down
 
 ## Troubleshooting:
