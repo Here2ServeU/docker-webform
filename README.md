@@ -11,46 +11,18 @@
 ## Steps:
 **1. Get the codes/scripts from this repo.**
 * git clone https://github.com/Here2ServeU/docker-webform
-
-**2. Create an S3 Bucket**
-* Go to the S3 console in AWS.
-* Create a new bucket and name it ***t2s-form-submissions***. 
-
-**3. Create a DynamoDB Table**
-* Go to the DynamoDB console in AWS.
-* Create a new table and name it ***T2SFormSubmissions***.
-* Primary Key should be ***submission_id** (String).
-
-**4. Create a Lambda Function**
-* Create a Lambda function that will handle the submissions for the form and name it ***lambda-function.py***.
-
-**5. Set Up API Gateway**
-* Go to the API Gateway console in AWS.
-* Create a new REST API.
-* Create a new resource (e.g., /submit_form).
-* Create a new POST method for the resource.
-* Integrate the POST method with the Lambda function created earlier.
-* Deploy the API to a new stage (e.g., prod).
-
-**6. Create S3 Bucket, DynamoDB, CloudWatch Logs, and Trust Policies**
-* Create policies.
-* Create an IAM Role for Lambda service and attach the above policies. 
-
-**7. Move into the working directory:**
 * cd docker-webform
 
-**8. Modify the HTML Form to Submit to the API**
-* Update the form action URL in the HTML to point to the API Gateway endpoint by replacing the ***<api-id>*** with your ***API Gateway ID***. 
-
-**9. Build and Run Docker Compose:**
+**2. Build and Run Docker Compose:**
 * docker-compose build
 * docker-compose up
 
-**10. Validate:**
+**3. Validate:**
 * Open your browser and go to http://localhost:8080🌐.
-* If you did not change the code, you should see your website live with this message: "Hello, World, from Dr. Emmanuel here at T2S!"
+* If you did not change the code, you should have a submission form. However, the form doesn't input data into any storage service, so if you try to fill it out, you will get an error!
+* I will be making a video about how you can connect this form to any storage service on AWS, or some other cloud platforms. 
 
-**11. Clean Up:**
+**4. Clean Up:**
 * docker-compose down
 
 ## Troubleshooting:
@@ -59,5 +31,5 @@
 
 
 ## Outro:
-* 🎉 Congrats! You have successfully deployed a website built on a node.js script and using Docker Compose.
+* 🎉 Congrats! You have successfully deployed a website built on an HTML script using Docker Compose.
 * 💬 Leave any questions or comments below; I'll gladly help!
